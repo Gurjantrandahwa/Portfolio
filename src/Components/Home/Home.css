@@ -1,0 +1,55 @@
+.home {
+    overflow-x: hidden;
+}
+
+.background-img {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.home-text {
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 40%;
+    left: 24%;
+}
+
+.home-text > h1 {
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    animation: animate 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+.home-text h2 {
+    margin-top: 25px;
+    font-size: 26px;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 210px;
+    font-weight: 500;
+}
+
+.down-icon {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    animation: icon 2s Linear infinite;
+}
+
+@keyframes icon {
+
+}
+
+
+@keyframes animate {
+
+}
