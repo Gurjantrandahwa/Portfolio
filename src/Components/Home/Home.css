@@ -1,5 +1,6 @@
 .home {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+
 }
 
 .background-img {
@@ -15,17 +16,14 @@
 .home-text {
     color: white;
     text-align: center;
-    position: fixed;
-    top: 40%;
-    left: 24%;
+    margin-top: 230px;
 }
 
 .home-text > h1 {
     font-size: 45px;
     font-family: 'Raleway', sans-serif;
-    font-weight:600;
-    animation: animate 1s linear infinite;
-    animation-iteration-count: 1;
+
+
 }
 
 .home-text h2 {
@@ -33,23 +31,37 @@
     font-size: 26px;
     font-style: italic;
     font-family: "Times New Roman", Times, serif;
-    margin-bottom: 210px;
     font-weight: 500;
 }
 
 .down-icon {
     color: white;
-    font-size: 30px;
-    text-align: center;
+    font-size: 35px;
     cursor: pointer;
-    animation: icon 2s Linear infinite;
+    animation: icon 3s infinite;
+    position: relative;
+    animation-timing-function: linear;
+    font-weight: bolder;
+    margin: 200px auto 100px auto;
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes icon {
-
+    0% {
+        top: 0;
+    }
+    25% {
+        top: 20px;
+    }
+    50% {
+        top: 10px;
+    }
+    75% {
+        top: 20px;
+    }
+    100% {
+        top: 0;
+    }
 }
 
-
-@keyframes animate {
-
-}

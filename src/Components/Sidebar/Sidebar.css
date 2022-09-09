@@ -3,21 +3,63 @@
 }
 
 .sidebar {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 90px;
+    background-color: rgba(18, 15, 15, 0.54);
+    width: 80px;
     height: 100vh;
     text-align: center;
-    position: fixed;
+    position: absolute;
+    top:0
 }
 
 .sidebar-icons {
-    font-size: 30px;
-    color: lightgray;
-    margin-top: 25px;
+    font-size: 35px;
+    color: #6e6d6d;
+
+}
+
+.sidebar-icons > div {
+    margin-top: 20px;
 }
 
 .logo-img {
     margin-top: 30px;
-    margin-bottom: 40px;
-    width: 50px;
+    margin-bottom: 70px;
+    width: 40px;
 }
+.sidebar-tooltip{
+    position: relative;
+
+}
+
+.sidebar-tooltip .tooltip-text {
+    visibility: hidden;
+    width: 50px;
+    background-color: var(--primary);
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 30px;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.sidebar-tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+/*.selected {*/
+/*    color: var(--primary);*/
+/*    font-size: 35px;*/
+/*    margin-top: 25px;*/
+/*}*/
+
+.sidebar-icons:hover {
+    cursor: pointer;
+}
+
