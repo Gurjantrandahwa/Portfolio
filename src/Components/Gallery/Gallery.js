@@ -6,50 +6,40 @@ import Masonry from 'react-masonry-css'
 export default function Gallery() {
     const [limit, setLimit] = useState(8)
 
-    const handleShowMoreImages = () => {
-        if (limit <= 8) {
-            let limit = limit + 3;
-            setLimit(limit)
-        }
-    }
     const images = [
         {
             img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pa1-full.jpg",
-
+            text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pm1-full.jpg"
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pm1-full.jpg",
+            text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp1.jpg"
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp1.jpg",
+            text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pa2-full.jpg"
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pa2-full.jpg",
+            text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps1.jpg"
-        },
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pm2.jpg",
-        },
-
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg"
-        },
-
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg"
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps1.jpg",
+            text: "This is a caption",
         },
         {
             img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pm2.jpg",
+            text: "This is a caption",
         },
 
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg"
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg",
+            text: "This is a caption",
         },
 
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg"
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg",
+            text: "This is a caption",
         },
     ]
     return <div className={"gallery"}>
@@ -68,17 +58,23 @@ export default function Gallery() {
             <Masonry breakpointCols={3} className="my-masonry-grid"
                      columnClassName="my-masonry-grid_column">
                 {
-                    images.slice(0,limit).map((image, index) => {
-                        return <img src={image.img}
-                                    key={index}
-                                    className={"gallery-images"} alt={""}/>
+                    images.map((value, index) => {
+                        return <div key={index}>
+                            <img src={value.img}
+                                 className={"gallery-images"} alt={""}/>
+                            <div className={"middle"}>
+                                <h6 className={"text"}>{value.text}</h6>
+                            </div>
+
+                        </div>
                     })
                 }
             </Masonry>
         </div>
 
-
-        <Button className={"load-images-btn"} onClick={handleShowMoreImages}>Load more</Button>
+        <Button className={"load-images-btn"} onClick={() => {
+            setLimit(+3)
+        }}>Load more</Button>
     </div>
 }
 

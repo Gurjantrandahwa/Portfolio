@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Sidebar.css";
 import {AiOutlineHome} from "react-icons/ai";
 import {BsCardImage, BsCardText, BsPerson} from "react-icons/bs";
-import {Col, OverlayTrigger, Row, Tooltip} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 
 function Sidebar() {
 
