@@ -6,7 +6,7 @@ import AnimatedText from "react-animated-text-content";
 
 
 function Home() {
-    return <div className={"home"}>
+    return <div className={"home"} id={"#home"}>
         <img src={img_1} alt={""} className={"background-img"}/>
         <div className={"home-text"}>
             <AnimatedText
@@ -49,5 +49,4 @@ function Home() {
         <BsChevronDown className={"down-icon"}/>
     </div>
 }
-
 export default Home
