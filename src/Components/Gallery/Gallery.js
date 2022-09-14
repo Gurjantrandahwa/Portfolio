@@ -1,7 +1,11 @@
-import React, { useState} from "react";
+import React, {useState} from "react";
 import "./gallery.css";
 import {Button,} from "react-bootstrap";
 import Masonry from 'react-masonry-css'
+import img_2 from "../../Images/img_2.png";
+import img_3 from "../../Images/img_3.png";
+import img_4 from "../../Images/img_4.png";
+import img_5 from "../../Images/img_5.png";
 
 export default function Gallery() {
 
@@ -12,19 +16,19 @@ export default function Gallery() {
     }
     const images = [
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pa1-full.jpg",
+            img: img_2,
             text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pm1-full.jpg",
+            img: img_3,
             text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp1.jpg",
+            img: img_4,
             text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pa2-full.jpg",
+            img: img_5,
             text: "This is a caption",
         },
         {
@@ -42,84 +46,41 @@ export default function Gallery() {
         },
 
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg",
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2.jpg",
             text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg",
-            text: "This is a caption",
-        },
-
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg",
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pm3-full.jpg",
             text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg",
-            text: "This is a caption",
-        },
-
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg",
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pa4-full.jpg",
             text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg",
-            text: "This is a caption",
-        },
-
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg",
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps4-full.jpg",
             text: "This is a caption",
         },
         {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg",
-            text: "This is a caption",
-        },
-
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg",
-            text: "This is a caption",
-        },
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/pp2.jpg",
-            text: "This is a caption",
-        },
-
-        {
-            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps2-full.jpg",
+            img: "https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/ps3-full.jpg",
             text: "This is a caption",
         },
 
     ]
-    return <div className={"gallery"} id={'#portfolio'}>
-
-        <div className={"gallery-header"}>
-            <h2>From My Portfolio</h2>
-            <div className={"gallery-buttons"}>
-                <Button>All</Button>
-                <Button>Architecture</Button>
-                <Button>Macro</Button>
-                <Button>Portrait</Button>
-                <Button>Still Life</Button>
-            </div>
-        </div>
-
+    return <div className={"gallery"} id="portfolio">
+        <h2>From My Portfolio</h2>
         <div className={"gallery-images-wrapper"}>
-            <Masonry breakpointCols={3} className="my-masonry-grid"
-                     columnClassName="my-masonry-grid_column">
+            {/*<Masonry breakpointCols={3} className="my-masonry-grid"*/}
+            {/*         columnClassName="my-masonry-grid_column">*/}
 
                 {images?.slice(0, limit).map((value, index) => {
                     return <div key={index}>
                         <img src={value.img}
                              className={"gallery-images"} alt={""}/>
-                        <div className={"middle"}>
-                            <h6 className={"text"}>{value.text}</h6>
-                        </div>
                     </div>
                 })
                 }
-            </Masonry>
+            {/*</Masonry>*/}
         </div>
 
         <Button className={"load-images-btn"} onClick={handleLoadImages}>

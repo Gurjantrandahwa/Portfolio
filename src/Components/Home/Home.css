@@ -14,9 +14,10 @@
 
 
 .home-text {
-    color: white;
+    color: #fcfcfc;
     text-align: center;
     margin-top: 230px;
+    font-weight: 800;
 }
 
 .home-text > h1 {
@@ -63,3 +64,35 @@
     }
 }
 
+@media only screen and (max-width: 854px) {
+    .home-text > h1 {
+
+        font-size: 25px;
+
+    }
+
+    .home-text > h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .home-text > h1 {
+        font-size: 32px;
+
+    }
+
+    .home-text > h2 {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .home-text > h1 {
+        font-size: 22px;
+
+    }
+
+    .home-text > h2 {
+        font-size: 16px;
+    }
+}

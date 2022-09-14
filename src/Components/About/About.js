@@ -7,30 +7,29 @@ import {FiTwitter} from "react-icons/fi";
 import {TiWeatherPartlySunny} from "react-icons/ti";
 import {RiTodoLine} from "react-icons/ri";
 import {FaBlog} from "react-icons/fa";
+import img from "../../Images/img.png";
 
 export default function About() {
-    return <div className={"about"}>
+    return <div className={"about"} id="about">
         <div className={"about-detail"}>
             <div>
                 <h2>Who is Behind All this </h2>
-                <h3>Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna.
+                <h3>
+                    Hello! I'm Gurjant Singh, a Front-End Web Developer with Html,CSS,React.js
+                    and Javascript.I love to build creative design to make eye-catching,accessible,
+                    user-friendly websites and applications.
                 </h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                    Fusce dapibus, tellus.<br/><br/>
-                    Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                    Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
-                    Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id
-                    nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo,
-                    tortor mauris condimentum nibh.<br/><br/>
-                    Fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis
-                    in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                    dolor auctor. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla.
+
+                <p>
+                    Well-organised person,interested in the entire frontend spectrum and working on ambitious projects
+                    with positive people.
                 </p>
+                <p>I spend my time on personal projects and learning more about HTML, CSS, React.js and
+                    Javascript.</p>
+                <p>Here are a few past design projects I've worked on</p>
             </div>
 
-            <img src={"https://demos.elemisthemes.com/lumos/vertical/dark/style/images/art/about.jpg"} alt={""}/>
+            <img src={img} alt={""}/>
 
         </div>
         <div className={"projects-wrapper"}>

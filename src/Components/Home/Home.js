@@ -6,7 +6,7 @@ import AnimatedText from "react-animated-text-content";
 
 
 function Home() {
-    return <div className={"home"} id={"#home"}>
+    return <div className={"home"} id={"home"}>
         <img src={img_1} alt={""} className={"background-img"}/>
         <div className={"home-text"}>
             <AnimatedText
@@ -25,7 +25,7 @@ function Home() {
                 threshold={0.1}
                 rootMargin="20%"
             >
-                Hello! This is Lupus Studio
+                Hello! This is Gurjant Singh
             </AnimatedText>
             <AnimatedText
                 type="words"
@@ -43,7 +43,7 @@ function Home() {
                 threshold={0.1}
                 rootMargin="20%"
             >
-                specializing in landscape, advertorial and conceptual photography
+                front-end web developer, I design and build User Interface.
             </AnimatedText>
         </div>
         <BsChevronDown className={"down-icon"}/>
