@@ -1,11 +1,12 @@
 .gallery {
     background-color: rgba(18, 15, 15, 0.54);
-    max-width: 1150px;
+    max-width: fit-content;
     height: fit-content;
     padding: 50px;
     margin: 50px 10px 100px 90px;
     font-family: 'Raleway', sans-serif;
     color: white;
+    justify-content: center;
 
 }
 
@@ -35,6 +36,9 @@
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
 }
 
 .load-images-btn {
@@ -44,22 +48,15 @@
 
 }
 
-/*.my-masonry-grid {*/
-
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-
-/*.my-masonry-grid_column {*/
-/*    background-clip: padding-box;*/
-/*}*/
 
 .gallery-images {
-    max-width: 340px;
+    max-width: 300px;
+    object-fit: cover;
     max-height: 340px;
     margin-top: 10px;
     border: 2px solid black;
     transition: .5s ease;
+
 }
 
 .gallery-images:hover {
@@ -72,8 +69,3 @@
     opacity: 0;
 }
 
-/*@media (max-width: 967px){*/
-/*    .my-masonry-grid{*/
-/*        display: grid;*/
-/*    }*/
-/*}*/

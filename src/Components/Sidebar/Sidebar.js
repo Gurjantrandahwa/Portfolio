@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import "./Sidebar.css";
-import {AiOutlineHome} from "react-icons/ai";
+import {AiFillCloseCircle, AiOutlineHome} from "react-icons/ai";
 import {BsCardImage, BsCardText, BsPerson} from "react-icons/bs";
-import {CloseButton, Modal, Nav, Navbar} from "react-bootstrap";
+import {Button, Modal, Nav, Navbar} from "react-bootstrap";
 import {GoThreeBars} from "react-icons/go";
 
 function Sidebar() {
@@ -26,24 +26,20 @@ function Sidebar() {
     const isMobile = width <= 800;
     if (isMobile) {
         return <div className={"mobile-sidebar"}>
-            <div className={"d-flex"}>
+            <div className={"logo-container"}>
                 <div>
                     <img className={"logo-img-mobile"}
                          src={"https://demos.elemisthemes.com/lumos/vertical/dark/style/images/logo@2x.png"} alt={""}/>
                 </div>
-                <div className={"mobile-side-icon"} onClick={() => setShow(true)}>
-                    <GoThreeBars/>
+                <div className={"mobile-buttons"}>
+                    <Button onClick={() => setShow(true)} className={"hide-btn"}><GoThreeBars/> </Button>
+                    <Button onClick={handleClose} className={"show-btn"}><AiFillCloseCircle/></Button>
                 </div>
             </div>
             <Modal className={"modal-mobile"}
                    show={show}
                    onHide={() => setShow(false)}
-                   // dialogClassName="modal-90w"
-                   aria-labelledby="example-custom-modal-styling-title"
             >
-                <Modal.Header>
-                    <button onClick={handleClose}>Close</button>
-                </Modal.Header>
                 <Modal.Body>
                     <div className={"navbar-container"}>
                         <Navbar>
@@ -76,7 +72,6 @@ function Sidebar() {
                     <Nav.Link href="#home">
                         <AiOutlineHome/>
                         <span className="tooltip-text">Home</span>
-
                     </Nav.Link>
                 </div>
 
@@ -105,5 +100,4 @@ function Sidebar() {
         </Navbar>
     </div>
 }
-
 export default Sidebar

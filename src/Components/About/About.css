@@ -1,24 +1,16 @@
 .about {
     background-color: rgba(18, 15, 15, 0.54);
-    max-width: 1150px;
+    max-width: 1000px;
     height: fit-content;
     padding: 50px;
-    margin-left: 90px;
-    margin-right: 10px;
-    margin-top: 30px;
+    margin: 50px 10px 100px 86px;
     font-family: 'Raleway', sans-serif;
     color: white;
 
 }
 
 .about-detail {
-    display: inline-grid;
-    grid-column: 2;
-    grid-row: 2;
-
-    margin-top: 40px;
-
-
+    display: flex;
 }
 
 .about h3 {
@@ -36,8 +28,10 @@
 }
 
 .about img {
-    object-fit: contain;
+    object-fit: cover;
     margin-left: 10px;
+    max-width: 350px;
+    max-height: 350px;
 }
 
 
@@ -49,13 +43,13 @@
     display: inline-grid;
     grid-row-start: 1;
     grid-row-end: 3;
-    max-width: 300px;
+    max-width: 330px;
     margin-top: 40px;
-    padding-left: 30px;
 }
-
+.text-wrapper{
+   display: flex;
+}
 .projects p {
-
     line-height: 1.6;
     margin-top: 10px;
     font-size: 15px;
@@ -72,6 +66,13 @@
     font-size: 35px;
     margin-right: 20px;
 
+}
+@media only screen and (max-width: 800px) {
+    .about-detail {
+        flex-direction: column-reverse;
 
+    }
+    .projects-wrapper {
+    }
 }
 

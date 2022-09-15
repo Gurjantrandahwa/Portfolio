@@ -8,12 +8,18 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-    return <div className={"app"}>
+    return <div>
         <Container fluid>
-            <Home/>
             <Sidebar/>
-            <Gallery/>
-            <About/>
+            <Home/>
+
+
+                <Gallery/>
+<div className={"app"}>
+    <About />
+</div>
+
+
             <Contact/>
             <Footer/>
         </Container>
