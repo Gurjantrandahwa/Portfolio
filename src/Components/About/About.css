@@ -6,7 +6,7 @@
     /*margin: 50px 10px 100px 86px;*/
     font-family: 'Raleway', sans-serif;
     color: white;
-    margin:  50px auto  ;
+    margin: 50px auto;
 }
 
 .about-detail {
@@ -47,9 +47,11 @@
     max-width: 330px;
     margin-top: 40px;
 }
-.text-wrapper{
-   display: flex;
+
+.text-wrapper {
+    display: flex;
 }
+
 .projects p {
     line-height: 1.6;
     margin-top: 10px;
@@ -68,11 +70,13 @@
     margin-right: 20px;
 
 }
+
 @media only screen and (max-width: 800px) {
     .about-detail {
         flex-direction: column-reverse;
 
     }
+
     .projects-wrapper {
     }
 }

@@ -3,12 +3,10 @@
     max-width: 1000px;
     height: fit-content;
     padding: 20px;
-    /*margin: 50px 10px 100px 90px;*/
     font-family: 'Raleway', sans-serif;
     color: white;
     justify-content: center;
     margin: 80px auto;
-
 }
 
 .gallery h2 {

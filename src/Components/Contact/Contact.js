@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import "./Contact.css";
 import {FiMap} from "react-icons/fi";
 import {AiOutlineMail} from "react-icons/ai";
@@ -9,9 +9,8 @@ export default function Contact() {
     return <div className={"contact"} id={"contact"}>
         <h2>Get in Touch with me</h2>
         <p>
-          I'm seeking out opportunities to collaborate companies and agencies.<br/>
-
-        Reach out through any platforms below:</p>
+            I'm seeking out opportunities to collaborate companies and agencies.<br/>
+            Reach out through any platforms below:</p>
         <div className={"contact-details"}>
             {
                 [

@@ -43,7 +43,8 @@ function Sidebar() {
                 </div>
                 <div>
                     {
-                        hideIcon ? <Button className={"sidebar-btn"} onClick={handleShow}> <GoThreeBars/> </Button> : null
+                        hideIcon ?
+                            <Button className={"sidebar-btn"} onClick={handleShow}> <GoThreeBars/> </Button> : null
                     }
 
                     {
