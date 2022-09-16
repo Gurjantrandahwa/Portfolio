@@ -16,8 +16,9 @@
 .home-text {
     color: #fcfcfc;
     text-align: center;
-    margin-top: 230px;
+    margin-top: 210px;
     font-weight: 800;
+    padding: 20px;
 }
 
 .home-text > h1 {
@@ -86,7 +87,7 @@
         font-size: 25px;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 516px) {
     .home-text > h1 {
         font-size: 22px;
 

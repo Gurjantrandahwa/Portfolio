@@ -46,7 +46,10 @@ function Home() {
                 front-end web developer, I design and build User Interface.
             </AnimatedText>
         </div>
-        <BsChevronDown className={"down-icon"}/>
+        <BsChevronDown className={"down-icon"} onClick={()=>{
+            window.scrollTo(0,700)
+        }}/>
     </div>
 }
+
 export default Home

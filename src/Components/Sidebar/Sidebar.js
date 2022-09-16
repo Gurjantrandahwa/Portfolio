@@ -1,20 +1,31 @@
 import React, {useEffect, useState} from "react";
 import "./Sidebar.css";
-import {AiFillCloseCircle, AiOutlineHome} from "react-icons/ai";
+import {AiOutlineHome} from "react-icons/ai";
 import {BsCardImage, BsCardText, BsPerson} from "react-icons/bs";
 import {Button, Modal, Nav, Navbar} from "react-bootstrap";
 import {GoThreeBars} from "react-icons/go";
+import {FaPhoenixSquadron} from "react-icons/fa";
 
 function Sidebar() {
     const [width, setWidth] = useState(window.innerWidth);
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(false);
+    const [showIcon, setShowIcon] = useState(false);
+    const [hideIcon, setHideIcon] = useState(true);
 
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
     }
 
+
+    const handleShow = () => {
+        setShow(true)
+        setShowIcon(true)
+        setHideIcon(false)
+    }
     const handleClose = () => {
         setShow(false)
+        setShowIcon(false)
+        setHideIcon(true)
     }
     useEffect(() => {
         window.addEventListener('resize', handleWindowSizeChange);
@@ -28,12 +39,17 @@ function Sidebar() {
         return <div className={"mobile-sidebar"}>
             <div className={"logo-container"}>
                 <div>
-                    <img className={"logo-img-mobile"}
-                         src={"https://demos.elemisthemes.com/lumos/vertical/dark/style/images/logo@2x.png"} alt={""}/>
+                    <FaPhoenixSquadron size={34} className={"logo-img"}/>
                 </div>
-                <div className={"mobile-buttons"}>
-                    <Button onClick={() => setShow(true)} className={"hide-btn"}><GoThreeBars/> </Button>
-                    <Button onClick={handleClose} className={"show-btn"}><AiFillCloseCircle/></Button>
+                <div>
+                    {
+                        hideIcon ? <Button className={"sidebar-btn"} onClick={handleShow}> <GoThreeBars/> </Button> : null
+                    }
+
+                    {
+                        showIcon ? <Button className={"sidebar-btn"} onClick={handleClose}>X</Button> : null
+                    }
+
                 </div>
             </div>
             <Modal className={"modal-mobile"}
@@ -57,13 +73,12 @@ function Sidebar() {
                     </div>
                 </Modal.Body>
             </Modal>
-
         </div>
     }
     return <div className={"sidebar"}>
         <div>
-            <img className={"logo-img"}
-                 src={"https://demos.elemisthemes.com/lumos/vertical/dark/style/images/logo@2x.png"} alt={""}/>
+
+            <FaPhoenixSquadron size={34} className={"logo-img"}/>
         </div>
 
         <Navbar>
@@ -100,4 +115,5 @@ function Sidebar() {
         </Navbar>
     </div>
 }
+
 export default Sidebar

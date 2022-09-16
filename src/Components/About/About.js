@@ -62,6 +62,14 @@ export default function About() {
                         link: <a href={"https://twitter-clone-94586.web.app/"}>Visit Twitter Clone</a>
                     },
                     {
+                        icon: <CgWebsite/>,
+                        header: "E-commerce Website",
+                        text: "A React website which has multiple pages and good looking user interface with different effects and functionalities.",
+                        link: <a href={"https://github.com/Gurjantrandahwa/e-commerce-react"}>
+                            Visit E-commerce Website
+                        </a>
+                    },
+                    {
                         icon: <AiOutlineLogin/>,
                         header: "Login Page",
                         text: "A MERN login and signIn pages which which has mongo db server as well as eye catching user interface   ",
@@ -80,14 +88,7 @@ export default function About() {
                         text: "  In this React blog app the user can search and filter the blogs.Also, user can create the blogs and the data is stored in firebase.",
                         link: <a href={"https://blog-app-f22d2.web.app/"}>Visit Blog App</a>
                     },
-                    {
-                        icon: <CgWebsite/>,
-                        header: "E-commerce Website",
-                        text: "A React website which has multiple pages and good looking user interface with different effects and functionalities.",
-                        link: <a href={"https://github.com/Gurjantrandahwa/e-commerce-react"}>
-                            Visit E-commerce Website
-                        </a>
-                    },
+
                     {
                         icon: <RiTodoLine/>,
                         header: "To-Do App",

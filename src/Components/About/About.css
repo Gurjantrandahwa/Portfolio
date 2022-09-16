@@ -2,11 +2,11 @@
     background-color: rgba(18, 15, 15, 0.54);
     max-width: 1000px;
     height: fit-content;
-    padding: 50px;
-    margin: 50px 10px 100px 86px;
+    padding: 20px;
+    /*margin: 50px 10px 100px 86px;*/
     font-family: 'Raleway', sans-serif;
     color: white;
-
+    margin:  50px auto  ;
 }
 
 .about-detail {
@@ -32,6 +32,7 @@
     margin-left: 10px;
     max-width: 350px;
     max-height: 350px;
+    margin-bottom: 10px;
 }
 
 

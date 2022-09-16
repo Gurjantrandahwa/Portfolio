@@ -12,16 +12,13 @@ function App() {
         <Container fluid>
             <Sidebar/>
             <Home/>
-
-
+            <div className={"app"}>
                 <Gallery/>
-<div className={"app"}>
-    <About />
-</div>
+                <About/>
+                <Contact/>
+                <Footer/>
+            </div>
 
-
-            <Contact/>
-            <Footer/>
         </Container>
     </div>
 

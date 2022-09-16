@@ -19,7 +19,7 @@ export default function Contact() {
                         icon: <FiMap/>,
                         text: <>
                             <div>Goindwal Sahib,Taran-Taran</div>
-                            Punjab,India</>
+                            Punjab</>
                     },
 
                     {
