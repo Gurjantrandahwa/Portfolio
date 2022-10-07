@@ -5,7 +5,7 @@ import {CgWebsite} from "react-icons/cg";
 import {AiOutlineAmazon, AiOutlineLogin, AiOutlineYoutube} from "react-icons/ai";
 import {FiTwitter} from "react-icons/fi";
 import {TiWeatherPartlySunny} from "react-icons/ti";
-import {RiTodoLine} from "react-icons/ri";
+import {RiNetflixFill, RiTodoLine} from "react-icons/ri";
 import {FaBlog} from "react-icons/fa";
 import img from "../../Images/img.png";
 
@@ -35,7 +35,12 @@ export default function About() {
         <div className={"projects-wrapper"}>
             <h2>My Projects</h2>
             {
-                [
+                [   {
+                    icon: <RiNetflixFill/>,
+                    header: "Netflix Clone",
+                    text: "A app which is build with the firebase and React.In this signIn and signUp method with good looking UI.",
+                    link: <a href={" https://netflix-clone-4e2cc.web.app/"}>Visit Netflix Clone</a>
+                },
 
                     {
                         icon: <TbBrandTinder/>,

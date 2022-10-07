@@ -18,7 +18,7 @@ import img_27 from "../../Images/img_27.png";
 
 export default function Gallery() {
 
-    const [limit, setLimit] = useState(8)
+    const [limit, setLimit] = useState(12)
     const handleLoadImages = () => {
         setLimit((prevLimit) => prevLimit + 3)
     }
