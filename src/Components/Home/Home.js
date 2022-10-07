@@ -1,13 +1,12 @@
 import React from "react";
 import "./Home.css"
 import {BsChevronDown} from "react-icons/bs";
-import img_1 from "./../../Images/img_1.png";
 import AnimatedText from "react-animated-text-content";
 
 
 function Home() {
-    return <div className={"home"} id={"home"}>
-        <img src={img_1} alt={""} className={"background-img"}/>
+    return <div className={"home"} id={"home"} >
+        <img src={"https://uploads-ssl.webflow.com/5a9ee6416e90d20001b20038/6289facc9a52f636546eb6fd_dark-green-gradient.png"} alt={""} className={"background-img"}/>
         <div className={"home-text"}>
             <AnimatedText
                 type="words"
