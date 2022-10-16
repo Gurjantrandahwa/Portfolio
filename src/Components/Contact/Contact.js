@@ -1,8 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import {FiMap} from "react-icons/fi";
-import {AiOutlineMail} from "react-icons/ai";
-import {BiMobileAlt} from "react-icons/bi";
+
 
 export default function Contact() {
 
@@ -15,20 +13,20 @@ export default function Contact() {
             {
                 [
                     {
-                        icon: <FiMap/>,
+
                         text: <>
                             <div>Goindwal Sahib,Taran-Taran</div>
                             Punjab</>
                     },
 
                     {
-                        icon: <BiMobileAlt/>,
+
                         text: <>
                             <div>Message or Call</div>
                             8528083391</>
                     },
                     {
-                        icon: <AiOutlineMail/>,
+
                         text: <>
                             <div>gurjantrandhawa74456@gmail.com</div>
                             gurjantrandhawa744@gmail.com</>

@@ -2,10 +2,23 @@
     display: flex;
 }
 
-html {
-    scroll-behavior: smooth;
+/*html {*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+.app {
+    color: white;
+    background-color: rgb(36, 36, 36);
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 0;
+
+
 }
-.app{
-
-
+.snap-start{
+    scroll-snap-align: start ;
+}
+.snap-center{
+    scroll-snap-align: center
 }

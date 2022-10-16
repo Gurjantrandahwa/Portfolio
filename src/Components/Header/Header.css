@@ -1,0 +1,39 @@
+.social-header {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1280px;
+    display: flex;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.mail-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #d1d5db;
+}
+
+.mail-text {
+    font-size: 14px;
+    line-height: 1rem;
+    display: block;
+
+
+}
+
+.social-header a {
+    text-decoration: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .mail-text {
+        display: none;
+    }
+}
+

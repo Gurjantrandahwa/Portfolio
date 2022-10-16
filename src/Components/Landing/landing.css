@@ -1,0 +1,70 @@
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+}
+
+.role-img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.role-text {
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.25rem;
+    padding-bottom: 0.5rem;
+    color: #6b7280;
+    font-weight: 400;
+    z-index: 20;
+
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    border: 1px solid #242424;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    background: transparent;
+    transition: all;
+    color: #6b7280;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-left: 10px;
+    border-radius: 16px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.index{
+    z-index: 20;
+}
+
+.button-container button:hover {
+    border: 1px solid #fbbf24;
+    color: #fbbf24;
+    opacity: 1;
+}
+
+@media screen and (max-width: 512px) {
+   .home h1{
+       font-size: 24px;
+   }
+}
+
