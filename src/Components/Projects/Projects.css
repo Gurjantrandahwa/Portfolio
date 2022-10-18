@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 98vh;
+    height: 100vh;
     overflow: hidden;
     align-items: center;
     margin-left: auto;
@@ -41,6 +41,9 @@
     scroll-snap-type: x mandatory;
     z-index: 20;
 
+}
+.projects-container a{
+    color: white!important;
 }
 
 .projects-image-wrapper {
