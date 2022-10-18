@@ -16,10 +16,12 @@
 
 
 }
-.snap-start{
-    scroll-snap-align: start ;
+
+.snap-start {
+    scroll-snap-align: start;
 }
-.snap-center{
+
+.snap-center {
     scroll-snap-align: center
 }
 

@@ -21,10 +21,10 @@ function App() {
         </section>
 
         <section id={"skills"} className={"snap-start"}>
-        <Skills/>
+            <Skills/>
         </section>
         <section id={"skills"} className={"snap-start"}>
-          <Project/>
+            <Project/>
         </section>
 
         <section className={"snap-start"}>

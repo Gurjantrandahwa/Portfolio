@@ -42,8 +42,9 @@
     z-index: 20;
 
 }
-.projects-container a{
-    color: white!important;
+
+.projects-container a {
+    color: white !important;
 }
 
 .projects-image-wrapper {
@@ -64,9 +65,11 @@
 
     width: 400px;
 }
-.header{
+
+.header {
     margin-top: 20px;
 }
-.description{
-  padding: 20px;
+
+.description {
+    padding: 20px;
 }

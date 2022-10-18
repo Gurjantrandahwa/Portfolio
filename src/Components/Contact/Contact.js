@@ -2,12 +2,20 @@ import React from "react";
 import "./Contact.css";
 import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/solid";
 import {MapPinIcon} from "@heroicons/react/20/solid";
-import { useForm } from "react-hook-form";
+import {useForm} from "react-hook-form";
 
+const defaultValues = {
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+}
 
 export default function Contact() {
-    const { register, handleSubmit, watch, errors } = useForm();
-    const onSubmit = data => console.log(data);
+    const {register, handleSubmit} = useForm({defaultValues});
+    const onSubmit = (formData) => {
+        window.location.href = `mailto:gurjantrandhawa74456@gmail?subject=${formData.subject}&body=Hi,my name is${formData.name}.${formData.message} (${formData.email})`;
+    };
     return <div className={"contact"} id={"contact"}>
         <p className={"contact-header"}>
             Contact
@@ -45,24 +53,28 @@ export default function Contact() {
                 }
             </div>
             <div>
-                <form className={"form-wrapper"}>
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className={"form-wrapper"}>
                     <input
+                        {...register('name',{ required: true })}
                         placeholder={"Name"}
-                        type={"text"}
-                        className={"contactInput"}/>
+                        type={"name"}
+                    />
                     <input
-
+                        {...register('email',{ required: true })}
                         placeholder={"Email"}
                         type={"email"}
-                        className={"contactInput"}/>
+                    />
 
                     <input
-
+                        {...register("subject")}
                         placeholder={"Subject"}
                         type={"text"}
-                        className={"contactInput"}/>
+                    />
 
                     <textarea
+                        {...register('message',{ required: true })}
                         rows={5}
                         placeholder={"Message"}
                         className={"contactInput"}/>
