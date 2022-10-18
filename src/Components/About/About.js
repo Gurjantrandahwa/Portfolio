@@ -4,19 +4,34 @@ import {motion} from "framer-motion";
 
 
 export default function About() {
-    return <motion.div className={"about"} id="about">
+    return <motion.div
+        initial={{opacity: 0}}
+        transition={{duration: 1.5}}
+        whileInView={{opacity: 1}}
+        className={"about"}
+        id="about">
         <p className={"about-header"}>
             About
         </p>
         <div className={"about-background"}>
-            <img
+            
+            <motion.img
+                initial={{
+                    x: -200,
+                    opacity: 0
+                }}
+                transition={{
+                    duration: 1.2
+                }}
+                whileInView={{x: 0, opacity: 1}}
+                viewport={{once: true}}
                 className={"about-img"}
                 src={"https://cdn.sanity.io/images/e9l8wohw/production/bfcf365897b86f9751e8fc3aa30c53e1116b55df-708x1596.jpg?rect=0,0,708,1111"}
                 alt={""}/>
 
             <div className={"about-background-text"}>
                 <h2>
-                    Here is a{" "}<span>little</span> background
+                    Here is a{" "}<span className={"underline-text"}>little</span> background
                 </h2>
                 <p>
                     Hello! I'm Gurjant Singh, a Front-End Web Developer.

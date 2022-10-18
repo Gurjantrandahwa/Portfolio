@@ -57,10 +57,7 @@ function Header() {
                 <p className={"mail-text"}>Get in Touch</p>
             </div>
         </a>
-
-
     </header>
-
 }
 
 export default Header

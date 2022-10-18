@@ -2,8 +2,9 @@ import './App.css';
 import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing/Landing";
 import About from "./Components/About/About";
-
 import Contact from "./Components/Contact/Contact";
+import Skills from "./Components/Skills/Skills";
+import Project from "./Components/Projects/Project";
 
 
 function App() {
@@ -16,8 +17,16 @@ function App() {
         </section>
 
         <section className={"snap-center"}>
-            <About/>
+            <About id={"about"}/>
         </section>
+
+        <section id={"skills"} className={"snap-start"}>
+        <Skills/>
+        </section>
+        <section id={"skills"} className={"snap-start"}>
+          <Project/>
+        </section>
+
         <section className={"snap-start"}>
             <Contact/>
         </section>

@@ -1,52 +1,108 @@
 .contact {
-    background-color: rgba(18, 15, 15, 0.54);
-    max-width: 1000px;
-    height: fit-content;
-    padding: 20px;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    margin: auto;
-    justify-content: center;
-}
-
-.contact p {
-    margin-top: 25px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.contact-details {
-    text-align: center;
+    height: 120vh;
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.contact-details-icons {
-    color: #9cbc68;
-    font-size: 28px;
+
+.contact-header {
+    position: absolute;
+    top: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #6b7280;
 }
 
-.contact-details p {
+.subheading {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.subheading-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.details-wrapper {
+    margin-top: 10px;
+    align-items: center;
+
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-wrapper > div {
     margin-top: 10px;
 }
 
-
-.contact Button {
-    font-weight: bold;
-    border: 2px solid #7b7777;
-    background-color: transparent;
-    color: #bebcbc;
-    padding: 8px 15px;
-    text-transform: uppercase;
-    cursor: pointer;
+.icons {
+    color: #fbbf24;
+    padding-right: 20px;
+    width: 20px;
 }
 
-@media (max-width: 567px) {
-    .contact-details {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-    }
+.details {
+    font-size: 20px;
 }
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.form-wrapper input, textarea {
+    border-radius: 0.125rem;
+
+    border: none;
+    --tw-border-opacity: 1;
+    background-color: rgb(148 163 184 / 0.1);
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    padding: 1.0rem 0.75rem;
+    margin-top: 10px;
+    outline: none !important;
+}
+
+.form-wrapper input:focus, textarea:focus {
+    color: #f5c853;
+}
+
+
+.form-wrapper button {
+    padding: 10px 0.75rem;
+    margin-top: 5px;
+    background-color: #fbbf24;
+    border-radius: 6px;
+    font-weight: 700;
+    border: none;
+}
+
+@media screen and (min-width: 1022px) {
+    /*.form-wrapper input, textarea {*/
+    /*    margin-top: 5px;*/
+    /*}*/
+    /*.contact-header {*/
+    /*    top: 3rem;*/
+    /*}*/
+    /*.subheading {*/
+    /*    margin-top: 50px;*/
+    /*}*/
+}
+
