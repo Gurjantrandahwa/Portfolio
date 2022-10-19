@@ -14,7 +14,7 @@ const defaultValues = {
 export default function Contact() {
     const {register, handleSubmit} = useForm({defaultValues});
     const onSubmit = (formData) => {
-        window.location.href = `mailto:gurjantrandhawa74456@gmail?subject=${formData.subject}&body=Hi,my name is${formData.name}.${formData.message} (${formData.email})`;
+        window.location.href = `mailto:gurjantrandhawa74456@gmail.com?subject=${formData.subject}&body=Hi,my name is${formData.name}. The message is ${formData.message})`;
     };
     return <div className={"contact"} id={"contact"}>
         <p className={"contact-header"}>
