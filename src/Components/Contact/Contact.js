@@ -1,7 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/solid";
-import {MapPinIcon} from "@heroicons/react/20/solid";
 import {Button, TextField} from "@mui/material";
 
 export default function Contact() {
