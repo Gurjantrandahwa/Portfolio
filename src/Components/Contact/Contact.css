@@ -1,5 +1,5 @@
 .contact {
-    height: 120vh;
+    height: 100vh;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -25,6 +25,7 @@
 .subheading {
     font-size: 24px;
     padding: 5px;
+    margin-top: 40px;
 }
 
 .subheading-wrapper {
@@ -72,12 +73,24 @@
 
     border: none;
     --tw-border-opacity: 1;
-    background-color: rgb(148 163 184 / 0.1);
+    background-color: #333333;
     --tw-text-opacity: 1;
     color: rgb(107 114 128 / var(--tw-text-opacity));
     padding: 1.0rem 0.75rem;
     margin-top: 10px;
     outline: none !important;
+}
+::placeholder{
+    color: white;
+}
+::after{
+    background-color: #333333!important;
+}
+::before{
+    background-color: #333333!important;
+}
+::selection{
+    background-color: #333333!important;
 }
 
 .form-wrapper input:focus, textarea:focus {

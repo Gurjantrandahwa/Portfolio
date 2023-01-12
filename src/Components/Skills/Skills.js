@@ -13,9 +13,9 @@ export default function Skills() {
         <p className={"skills-header"}>
             Skills
         </p>
-        <p className={"skills-hover-text"}>
-            Hover over Skills
-        </p>
+        {/*<p className={"skills-hover-text"}>*/}
+        {/*    Hover over Skills*/}
+        {/*</p>*/}
         <motion.div
             initial={{
                 x: -200,
@@ -71,10 +71,6 @@ export default function Skills() {
                         skillName: "Node.js",
                     },
 
-                    {
-                        skill: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn56SnWHLJgY3sVt4LDvMFEQIdeEUnBZun3Z7-tUjFoPCYAS9rHopKcl-slO-t1aH45hI&usqp=CAU",
-                        skillName: "Next.js",
-                    },
 
                 ].map((value, index) => {
                     return <div key={index}>

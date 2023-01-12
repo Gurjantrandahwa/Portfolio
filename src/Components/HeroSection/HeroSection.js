@@ -1,12 +1,12 @@
 import React from "react";
-import "./landing.css";
+import "./Herosection.css";
 import {Cursor, useTypewriter} from 'react-simple-typewriter';
 import img from "../img.png"
-import BackgroundCircles from "./BackgroundCircles/BackgroundCircles";
+import BackgroundCircles from "../BackgroundCircles/BackgroundCircles";
 
 
-export default function Landing() {
-    const [text, count] = useTypewriter({
+export default function HeroSection() {
+    const [text] = useTypewriter({
         words: [`Hi, My name is Gurjant Singh`,
             "A front-end Developer",
             "<WhoLovesToCodeMore />"],
@@ -25,7 +25,7 @@ export default function Landing() {
                 Web Developer
             </h3>
             <h1>
-                <span className={"mr-3"}>{text}</span>
+                <span>{text}</span>
                 <Cursor cursorColor={"#F7AB04"}/>
             </h1>
             <div className={"button-container"}>

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from "./Components/Header/Header";
-import Landing from "./Components/Landing/Landing";
+import HeroSection from "./Components/HeroSection/HeroSection";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Skills from "./Components/Skills/Skills";
@@ -13,7 +13,7 @@ function App() {
         <Header id={"hero"}/>
 
         <section className={"snap-start"}>
-            <Landing id={"home"}/>
+            <HeroSection id={"home"}/>
         </section>
 
         <section className={"snap-center"}>

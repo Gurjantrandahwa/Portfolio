@@ -12,10 +12,8 @@ const defaultValues = {
 }
 
 export default function Contact() {
-    const {register, handleSubmit} = useForm({defaultValues});
-    const onSubmit = (formData) => {
-        window.location.href = `mailto:gurjantrandhawa74456@gmail.com?subject=${formData.subject}&body=Hi,my name is${formData.name}. The message is ${formData.message})`;
-    };
+
+
     return <div className={"contact"} id={"contact"}>
         <p className={"contact-header"}>
             Contact
@@ -53,28 +51,29 @@ export default function Contact() {
                 }
             </div>
             <div>
+
                 <form
-                    onSubmit={handleSubmit(onSubmit)}
-                    className={"form-wrapper"}>
+                    className={"form-wrapper"}
+                    action={"https://formspree.io/f/xzbqpbed"} method={"POST"}>
+
                     <input
-                        {...register('name',{ required: true })}
                         placeholder={"Name"}
                         type={"name"}
                     />
                     <input
-                        {...register('email',{ required: true })}
+
                         placeholder={"Email"}
                         type={"email"}
                     />
 
                     <input
-                        {...register("subject")}
+
                         placeholder={"Subject"}
                         type={"text"}
                     />
 
                     <textarea
-                        {...register('message',{ required: true })}
+
                         rows={5}
                         placeholder={"Message"}
                         className={"contactInput"}/>
