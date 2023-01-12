@@ -63,7 +63,8 @@
 
 .image {
 
-    width: 400px;
+    width: 500px;
+
 }
 
 .header {
@@ -72,4 +73,11 @@
 
 .description {
     padding: 20px;
+}
+@media screen and (max-width: 462px){
+    .image {
+
+        width: 340px;
+
+    }
 }

@@ -46,7 +46,6 @@ function Header() {
                 ].map((value, index) => {
                     return <div key={index}>
                         {value.icon}
-
                     </div>
                 })
             }

@@ -13,7 +13,7 @@
     line-height: 2rem;
     color: #6b7280;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .about-img {
@@ -31,13 +31,13 @@
 }
 
 .about-background-text h2 {
-justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 
 .underline-text {
     text-decoration: none;
-    border-bottom:2px solid #F7AB0A;
+    border-bottom: 2px solid #F7AB0A;
 }
 
 @media screen and (max-width: 762px) {
@@ -58,8 +58,9 @@ justify-content: flex-start;
     }
 
 }
-@media screen and (max-width: 400px){
-    .about-img{
+
+@media screen and (max-width: 400px) {
+    .about-img {
         width: 100px;
         height: 100px;
         margin-bottom: 30px;

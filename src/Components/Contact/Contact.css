@@ -1,109 +1,54 @@
 .contact {
-    height: 100vh;
-    display: flex;
-    position: relative;
-    flex-direction: column;
+    padding: 3rem 0 5rem 0;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-
-.contact-header {
-    position: absolute;
-    top: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 20px;
-    font-size: 1.5rem;
-    line-height: 2rem;
+.contact h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-transform: capitalize;
     color: #6b7280;
 }
 
-.subheading {
-    font-size: 24px;
-    padding: 5px;
-    margin-top: 40px;
-}
-
-.subheading-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.details-wrapper {
-    margin-top: 10px;
-    align-items: center;
-
-}
-
-.icon-wrapper {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-wrapper > div {
-    margin-top: 10px;
-}
-
-.icons {
-    color: #fbbf24;
-    padding-right: 20px;
-    width: 20px;
-}
-
 .details {
-    font-size: 20px;
-}
-
-.form-wrapper {
+ justify-content: center;
     display: flex;
+    text-align: center;
+    margin: 10px auto;
     flex-direction: column;
-    margin-top: 10px;
-    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 5px;
 }
 
-.form-wrapper input, textarea {
-    border-radius: 0.125rem;
+.form-container {
+    max-width: 550px;
+    justify-content: center;
+    margin: auto;
+}
 
-    border: none;
-    --tw-border-opacity: 1;
-    background-color: #333333;
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity));
-    padding: 1.0rem 0.75rem;
-    margin-top: 10px;
+.contact-form {
+    margin: 30px;
+
+}
+
+.form-container button {
+    background-color: #F7AB0A;
+
+}
+
+.form-container input {
+    color: white;
+    border: 1px solid #F7AB0A;
+    border-radius: 5px;
     outline: none !important;
 }
-::placeholder{
+
+.form-container textarea {
     color: white;
 }
-::after{
-    background-color: #333333!important;
-}
-::before{
-    background-color: #333333!important;
-}
-::selection{
-    background-color: #333333!important;
-}
 
-.form-wrapper input:focus, textarea:focus {
-    color: #f5c853;
+.form-container button:hover {
+    background-color: #F7AB0A;
 }
-
-
-.form-wrapper button {
-    padding: 10px 0.75rem;
-    margin-top: 5px;
-    background-color: #fbbf24;
-    font-weight: 700;
-    border: none;
-}
-
-
